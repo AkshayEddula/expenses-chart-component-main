@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+html {
+    font-family: 'DM Sans',sans-serif;
+    box-sizing: border-box;
+}
+
+main {
+    margin: 100px 500px;
+}
+
+.top_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: hsl(10, 79%, 65%);
+    padding: 20px 30px ;
+    border-radius: 30px;
+}
+
+.balance {
+    color: #fff;
+    
+}
+.balance p {
+    margin: 0;
+    padding: 10px 0 5px 0;
+    font-size: 15px;
+}
+.balance h1 {
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+
+.circles{
+    display: flex;
+    flex-direction: row;
+    padding-top: 13px;
+}
+
+.circles .c1{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: solid 1px #fff ;
+}
+
+.circles .c3 {
+    width: 39px;
+    height: 39px;
+    position: absolute;
+    right: 560px;
+}
+
+.circles .c2 {
+    background-color: hsl(25, 47%, 15%);
+    border: none;
+}
+
+.middle_container .spending h1 {
+    padding: 40px;
+    font-size: 40px;
+    color: hsl(25, 47%, 15%);
+}
+
+.bottom_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom_container .This_month {
+    padding-top: 60px;
+}
+
+.bottom_container .This_month p {
+    color: hsl(28, 10%, 53%);
+    margin: 0;
+}
+
+.bottom_container .This_month h1 {
+    color: hsl(25, 47%, 15%);
+    margin: 0;
+    font-size: 50px;
+}
+
+.bottom_container .last_month {
+    padding-top: 60px;
+}
+
+.bottom_container .last_month p {
+    color: hsl(25, 47%, 15%);
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+    left: 90px;
+    top: 30px;
+}
+
+.bottom_container .last_month h3 {
+    color: hsl(28, 10%, 53%);
+    font-weight: 400;
+    margin: 0;
+    padding-top: 30px;
+}
+
+canvas{
+    position: relative;
+}
+
+
+
+@media only screen and (max-width: 1550px) {
+    main {
+        margin: 50px 500px;
+    }
+
+    .middle_container .spending h1 {
+        padding: 20px;
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    main {
+        margin: 75px 500px;
+    }
+
+    .middle_container .spending h1 {
+        padding: 20px;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    
+    main {
+        margin: 40px 10px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .top_container {
+        border-radius: 10px;
+    }
+
+    .middle_container .spending h1 {
+        padding: 20px;
+        font-size: 25px;
+    }
+}
